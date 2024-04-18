@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ricardo Zarate</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body >
+    <!--Header-->
+    <div class="header" id="blur-1">
+        <div class="logo">
+            <a href="index.html">
+                <i class="fa-solid fa-r"></i>
+            </a>
+            <div class="logo-text">Ricardo Zarate</div>
+        </div>
+        <nav>
+            <ul class="navlinks">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="pages/portafolio.html">Portafolio</a></li>
+                <li><a href="img/cv_rlzg.pdf" target="_blank">Curriculum</a></li>
+                <li><a href="pages/contact.html">Contacto</a></li>
+            </ul>
+            <div class="togglebtn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </div>
+    <!--Main container-->
+    <div class="container" id="blur-2">
+        <div class="hero-pic">
+            <img src="img/ricard.jpg">
+        </div>
+        <div class="hero-text">
+            <h5>Hola, soy <span class="typed"></span></h5>
+            <h1>Ricardo Zarate</h1>
+            <p>
+                Soy un profesionista que se ha sabido adaptar a las nuevas tecnologias, aprovechando los desarrollos tecnologicos. Me apasiona pensar en cambios que se puedan aplicar a proyectos ya desarrollados para  aportar mejoras que los eficienticen. Mi rama es la industria energetica y la simulación de yacimientos pero también me he interesado por el desarrollo web, las tecnologias de machine learning y la inteligencia artificial.
+            </p>
+            <div class="btn-group">
+                <a href="img/cv_rlzg.pdf" download="cv_rlzg" class="btn btn-2">Descargar CV</a>
+                <button class="btn" id="btn-open-modal">Contactar</button>
+            </div>
+        </div>
+    </div>
+    <div class="social" id="blur-3">
+        <a href="https://www.linkedin.com/in/ricardozarateg/" target="_blank">
+            <i class="fa-brands fa-linkedin"></i>
+        </a>
+        <a class='about-me' href="#">Acerca de mi</a>
+    </div>
+    <!--Modal-->
+    <div class="modal" id="modal">
+        <a class="btn-x" id="btn-close-modal">
+            <i class="fa-solid fa-x" ></i>    
+        </a>
+        <form name="submit-to-google-sheet">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" rows="6" placeholder="Your Message" required></textarea>
+            <button type="submit" class="btn-group btn" id="btn-close-modal-2">Enviar</button>
+        </form>
+        
+    </div>
+    <!--Advert message-->
+    <span class='modal-advert' id="msg">
+        <h4>Mensage enviado</h4>
+    </span>
+    <span class='modal-advert' id="msg-2">
+        <h4>Mensage enviado</h4>
+    </span>
+    <!--Footer-->   
+    <div class="footer" id="blur-4">
+        <div class="copyright">
+            <p>Copyright © Ricardo Zarate</p>
+        </div>
+    </div>  
+    <!--Typed js for typing text effect-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+</html>
